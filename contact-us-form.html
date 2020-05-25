@@ -1,0 +1,57 @@
+<html>
+
+<head>
+  <title>Contact Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-metro.css">
+</head>
+
+<body>
+  <div class="w3-container">
+    <div class="w3-panel w3-metro-teal">
+  <h2>Contact Us</h2>
+  <br><br>
+  <h4>Need to get in touch with us? No problem, just enter your contact info and choose your reason from the options below. Someone will get back to you within one or two business days. Thanks!</h4>
+  <p><em>All fields are mandatory</em></p>
+  </div>
+  </div>
+  <br><br>
+  <form action="/actionpage.php" method="post" class id="form">
+    <fieldset class id="fieldset">
+      <div><label>
+          <p>Name:</p>
+        <input type="text" name="name" autofocus required><br><br>
+          <p>Email Address:</p>
+        <input type="text" name="email" required><br><br>
+          <fieldset><legend>Reason For Reaching Out:<abbr title="This field is mandatory" aria-label="required">*</abbr></legend>
+          <input type="checkbox" required name="reason" id="r1" value="question"><label for="r1">Question About My Order</label>
+        <input type="checkbox" required name="reason" id="r2" value="website"><label for="r2">Website Feedback</label>
+        <input type="checkbox" required name="troublefinding" id="troublefinding" value="trouble" onclick="showHideSuggestionForm()"><label for="troublefinding">Trouble Finding Product</label>
+        <fieldset id="suggestionform">
+          <h2>Product Suggestion Form</h2>
+          <br><br>
+          <h4>Got a <em>killer</em> idea for a new product? Let us know and leave your contact info in the fields below. If we like it, we'll be in touch.</h4>
+          <p><em>All fields are mandatory</em></p>
+          <br><br>
+          <form action="/actionpage.php" method="post">
+            <div>
+              <p>Name:</p>
+              <input type="text" name="name" autofocus required><br><br>
+              <p>Email Address:</p>
+              <input type="text" name="email" required><br><br>
+              <p>Tell us your cool idea:<abbr title="This field is mandatory" aria-label="required">*</abbr></p>
+              <textarea name="message" rows="20" cols="50"></textarea>
+              <br><br>
+              <button type="button" class="btn btn-info" onclick="alert('Nice! Thank You for your submission!')">Submit</button>
+            </div>
+            </fieldset>
+            <form>
+              <p>Feedback</p>
+              <textarea name="message" required rows="20" cols="50"></textarea>
+              <br><br>
+              <button type="button" class="btn btn-info" onclick="alert('Awesome! Thank You for your feedback!')">Submit</button>
+            </form>
+</body>
+
+</html>
