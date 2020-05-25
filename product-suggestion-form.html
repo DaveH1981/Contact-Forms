@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <title>Product Suggestion Form</title>
+  </head>
+  <body>
+    <h2>Product Suggestion Form</h2>
+    <br><br>
+    <h4>Got a <em>killer</em> idea for a new product? Let us know and leave your contact info in the fields below. If we like it, we'll be in touch.</h4>
+      <p><em>All fields are mandatory</em></p>
+    <br><br>
+    <form action="/actionpage.php" method="post" class id="form">
+      <fieldset class id="fieldset">
+        <div><label>
+          <p>Name:</p>
+        <input type="text" name="name" autofocus required><br><br>
+          <p>Email Address:</p>
+        <input type="text" name="email" required><br><br>
+          <p>Tell us your cool idea:<abbr title="This field is mandatory" aria-label="required">*</abbr></p>
+          <textarea name="message" class id="form" rows="20" cols="50"></textarea>
+        <br><br>
+        <input type="submit" onclick="alert('Nice! Thank You for your submission!')" "value="Submit">
+      </div>
+          </fieldset>
+</form>
+  </body>
+</html>

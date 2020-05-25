@@ -1,0 +1,25 @@
+html {
+  font-family: Roboto, sans-serif;
+  background-color: cyan;
+  text-align: center;
+}
+
+.form {
+  height: 400px;
+  width: 650px;
+  text-align: center;
+}
+
+.fieldset {
+  text-align: center;
+  border-color: red;
+  border-width: 8px
+}
+
+input:invalid {
+  border: 2px solid red;
+}
+
+input:valid {
+  border: 2px solid black;
+}
