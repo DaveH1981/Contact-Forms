@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <style>
     .error {color: #FF0000;}
+    body {text-align: center;}
     </style>
   </head>
   <body>
@@ -37,7 +38,7 @@
       }
 
       if (empty($_POST["website"])) {
-        $website = " ";
+        $website = "Website is required";
       } else {
         $website = test_input($_POST["website"]);
         //check if URL address syntax is valid (this regular expression also allows dashes in the URL)
@@ -78,7 +79,7 @@
       <span class="error">* <?php echo $emailErr;?></span>
       <br><br>
       Website: <input type="text" name="website" value="<?php echo $website;?>">
-      <span class="error"><?php echo $websiteErr;?></span>
+      <span class="error">* <?php echo $websiteErr;?></span>
       <br><br>
 
       Tell me your thoughts:<br>
@@ -100,7 +101,7 @@
       <br><br>
       <input type="submit" class="btn btn-success"></input>
       <input type="reset" class="btn btn-warning"></input>
-      <input type="button" onclick="alert('D'oh! I told you not to press it!')" class="btn btn-danger" value="Do Not Press This Button! DON'T DO IT!!!"></input>
+      <input type="button" onclick="alert('Dang it! I told you not to press it!')" class="btn btn-danger" value="Do Not Press This Button! DON'T DO IT!!!"></input>
     </form>
 
     <?php
